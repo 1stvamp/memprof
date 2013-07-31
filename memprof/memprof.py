@@ -81,8 +81,7 @@ class MemProf(object):
     self.__ticks = 0
     self.__checkTimes = []
     self.__logfile = "%s.log" % self.func.__name__
-    
-    self.__plot = self.func.__globals__["memprof_plot"]  if "memprof_plot" in self.func.__globals__ else plot
+
     self.threshold = self.func.__globals__["memprof_threshold"]  if "memprof_threshold" in self.func.__globals__ else threshold
               
     self.__units,self.__factor = get_units_factor(self.threshold)
@@ -178,9 +177,6 @@ class MemProf(object):
     
     self.__log.close()
     self.__ticks = 0    
-    
-    if self.__plot:
-      gen_plot(self.__logfile,self.threshold)
               
     print("memprof done")
     
