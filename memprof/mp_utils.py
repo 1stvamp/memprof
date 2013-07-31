@@ -1,11 +1,7 @@
-
 import os
 import sys
 import operator
 
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 
 PY3 = sys.version > '3'
 
