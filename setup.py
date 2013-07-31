@@ -20,7 +20,7 @@ class md_install_scripts(install_scripts):
 
 setup(
   name = "memprof",
-  version = "0.2.3-wesmason1",
+  version = "0.2.3-wesmason2",
   author = "Jose M. Dana",
   description = ("A memory profiler for Python. As easy as adding a decorator."),
   license = "GNU General Public License v3 (GPLv3)",
@@ -52,7 +52,7 @@ setup(
       "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
   ],
   requires=['argparse'],
-  install_requires=['argparse','matplotlib'],
+  install_requires=['argparse'],
   provides=['memprof'],
 )
 
